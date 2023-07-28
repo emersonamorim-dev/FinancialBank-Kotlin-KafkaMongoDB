@@ -6,17 +6,18 @@ Codificação em Kotlin de API de Serviços Financeiros, que fiz a implementaç�
 A API oferece os seguintes endpoints para manipulação das atualizações de saldo:
 
 1. Listar todas as atualizações de saldo
-Método: GET
-URL: /balance-updates
-Descrição: Retorna uma lista contendo todas as atualizações de saldo registradas no sistema.
+1. Método: GET
+2. URL: /balance-updates
+3. Descrição: Retorna uma lista contendo todas as atualizações de saldo registradas no sistema.
 
 2. Obter uma atualização de saldo por ID
-Método: GET
-URL: /balance-updates/{id}
-Parâmetros:
-id (String) - O ID único da atualização de saldo desejada.
-Descrição: Retorna os detalhes de uma atualização de saldo específica com base no ID fornecido.
-Estrutura do Projeto
+1. Método: GET
+2. URL: /balance-updates/{id}
+3. Parâmetros:
+4. id (String) - O ID único da atualização de saldo desejada.
+5. Descrição: Retorna os detalhes de uma atualização de saldo específica com base no ID fornecido.
+
+**Estrutura do Projeto**
 O projeto está organizado em pacotes para melhor separação de responsabilidades:
 
 1. Pacote com.financialBank.FinancialBank.controller
@@ -46,29 +47,27 @@ Navegue para o diretório raiz do projeto:
 
 cd FinancialBank
 Execute a aplicação usando o Gradle Wrapper:
-
 ./gradlew bootRun
+
 A API será iniciada e estará disponível em http://localhost:8080. Você pode acessar os endpoints descritos acima através de um cliente HTTP ou testá-los utilizando ferramentas como o Postman.
-
-Observações
-Certifique-se de ter uma instância do MongoDB em execução ou configurar corretamente o acesso ao MongoDB para que a API funcione corretamente.
-
-
 
 **- Endpoints - CreditTransactionController**
 A API oferece os seguintes endpoints para manipulação das transações de crédito:
 
 1. Listar todas as transações de crédito
-Método: GET
-URL: /credit-transactions
-Descrição: Retorna uma lista contendo todas as transações de crédito registradas no sistema.
+
+1. Método: GET
+2. URL: /credit-transactions
+3. Descrição: Retorna uma lista contendo todas as transações de crédito registradas no sistema.
+
 2. Obter uma transação de crédito por ID
-Método: GET
-URL: /credit-transactions/{id}
-Parâmetros:
-id (String) - O ID único da transação de crédito desejada.
-Descrição: Retorna os detalhes de uma transação de crédito específica com base no ID fornecido.
-Estrutura do Projeto
+
+1. Método: GET
+2. URL: /credit-transactions/{id}
+3. Parâmetros:
+4. id (String) - O ID único da transação de crédito desejada.
+5. Descrição: Retorna os detalhes de uma transação de crédito específica com base no ID fornecido.
+
 O projeto está organizado em pacotes para melhor separação de responsabilidades:
 
 1. Pacote com.financialBank.FinancialBank.controller
@@ -89,17 +88,18 @@ Este pacote contém as classes de serviço (services), que implementam a lógica
 A API oferece os seguintes endpoints para manipulação das transações:
 
 1. Listar todas as transações
-Método: GET
-URL: /transactions
-Descrição: Retorna uma lista contendo todas as transações registradas no sistema.
-2. Obter uma transação por ID
-Método: GET
-URL: /transactions/{id}
-Parâmetros:
-id (String) - O ID único da transação desejada.
-Descrição: Retorna os detalhes de uma transação específica com base no ID fornecido.
-Estrutura do Projeto
-O projeto está organizado em pacotes para melhor separação de responsabilidades:
+
+1. Método: GET
+2. URL: /transactions
+3. Descrição: Retorna uma lista contendo todas as transações registradas no sistema.
+4. 2. Obter uma transação por ID
+5. Método: GET
+6. URL: /transactions/{id}
+7. Parâmetros:
+8. id (String) - O ID único da transação desejada.
+9. Descrição: Retorna os detalhes de uma transação específica com base no ID fornecido.
+10. Estrutura do Projeto
+11. O projeto está organizado em pacotes para melhor separação de responsabilidades:
 
 1. Pacote com.financialBank.FinancialBank.controller
 Este pacote contém os controladores (controllers) da API, que são responsáveis por lidar com as requisições HTTP e retornar as respostas apropriadas. O controlador relacionado às transações é DebitController.
@@ -118,16 +118,18 @@ Este pacote contém as classes de serviço (services), que implementam a lógica
 A API oferece os seguintes endpoints para manipulação das solicitações de extrato:
 
 1. Listar todas as solicitações de extrato
+
 Método: GET
-URL: /statement-requests
-Descrição: Retorna uma lista contendo todas as solicitações de extrato registradas no sistema.
-2. Obter uma solicitação de extrato por ID
-Método: GET
-URL: /statement-requests/{id}
-Parâmetros:
-id (String) - O ID único da solicitação de extrato desejada.
-Descrição: Retorna os detalhes de uma solicitação de extrato específica com base no ID fornecido.
-Estrutura do Projeto
+1. URL: /statement-requests
+2. Descrição: Retorna uma lista contendo todas as solicitações de extrato registradas no sistema.
+3. 2. Obter uma solicitação de extrato por ID
+4. Método: GET
+5. URL: /statement-requests/{id}
+6. Parâmetros:
+7. id (String) - O ID único da solicitação de extrato desejada.
+8. Descrição: Retorna os detalhes de uma solicitação de extrato específica com base no ID fornecido.
+9. Estrutura do Projeto
+
 O projeto está organizado em pacotes para melhor separação de responsabilidades:
 
 1. Pacote com.financialBank.FinancialBank.controller
@@ -149,16 +151,18 @@ Este pacote contém as classes de serviço (services), que implementam a lógica
 A API oferece os seguintes endpoints para manipulação das transações de transferência:
 
 1. Listar todas as transações de transferência
-Método: GET
-URL: /transfer-transactions
-Descrição: Retorna uma lista contendo todas as transações de transferência registradas no sistema.
-2. Obter uma transação de transferência por ID
-Método: GET
-URL: /transfer-transactions/{id}
-Parâmetros:
-id (String) - O ID único da transação de transferência desejada.
-Descrição: Retorna os detalhes de uma transação de transferência específica com base no ID fornecido.
-Estrutura do Projeto
+
+1. Método: GET
+2. URL: /transfer-transactions
+3. Descrição: Retorna uma lista contendo todas as transações de transferência registradas no sistema.
+4. 2. Obter uma transação de transferência por ID
+5. Método: GET
+6. URL: /transfer-transactions/{id}
+7. Parâmetros:
+8. id (String) - O ID único da transação de transferência desejada.
+9. Descrição: Retorna os detalhes de uma transação de transferência específica com base no ID fornecido.
+
+**Estrutura do Projeto**
 O projeto está organizado em pacotes para melhor separação de responsabilidades:
 
 1. Pacote com.financialBank.FinancialBank.controller
